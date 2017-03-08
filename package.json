@@ -1,0 +1,30 @@
+{
+  "name": "pingbot",
+  "version": "0.1.0",
+  "description": "Pingbot for heroku",
+  "main": "index.js",
+  "dependencies": {
+    "request-promise": "^4.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "6.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamdevonbutler/pingbot.git"
+  },
+  "keywords": [
+    "pingbot",
+    "heroku"
+  ],
+  "author": "Jay Pescione <jpescione@gmail.com> (https://github.com/iamdevonbutler)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iamdevonbutler/pingbot/issues"
+  },
+  "homepage": "https://github.com/iamdevonbutler/pingbot#readme"
+}
