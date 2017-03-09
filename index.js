@@ -29,4 +29,4 @@ http.createServer((req, res) => {
     'Content-Type': 'text/plain',
   });
   res.end('Thanks for keepin me alive!');
-}).listen(1337);
+}).listen(process.env.PORT || 3000);
