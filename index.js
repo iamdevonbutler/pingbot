@@ -24,5 +24,9 @@ function ping() {
 ping();
 setInterval(ping, frequency);
 
-const server = http.createServer(() => {});
-server.listen(process.env.PORT || 3000);
+http.createServer((req, res) => {
+  res.writeHead(200, {
+    'Content-Type': 'text/plain',
+  });
+  res.end('Thanks for keepin me alive!');
+}).listen(1337);
