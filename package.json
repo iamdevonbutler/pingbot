@@ -4,6 +4,7 @@
   "description": "Pingbot for heroku",
   "main": "index.js",
   "dependencies": {
+    "request": "^2.80.0",
     "request-promise": "^4.1.1"
   },
   "devDependencies": {},
