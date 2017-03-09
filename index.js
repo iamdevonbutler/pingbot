@@ -1,4 +1,5 @@
 const request = require('request-promise');
+const http = require('http');
 
 const frequency = process.env.FREQUENCY || 60*60*5*1000;
 const sites = process.env.SITES ? process.env.SITES.split(' ') : null;
@@ -22,3 +23,6 @@ function ping() {
 
 ping();
 setInterval(ping, frequency);
+
+const server = http.createServer(() => {});
+server.listen(process.env.PORT || 3000
