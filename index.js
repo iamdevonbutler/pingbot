@@ -25,4 +25,4 @@ ping();
 setInterval(ping, frequency);
 
 const server = http.createServer(() => {});
-server.listen(process.env.PORT || 3000
+server.listen(process.env.PORT || 3000);
