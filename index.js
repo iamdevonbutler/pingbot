@@ -13,10 +13,9 @@ if (!sites) {
 }
 
 function ping() {
-  console.log(111);
+  console.log(`Ping at: ${new Date()}`);
   request(pinbotDomain).catch(console.error);
   sites.forEach(site => {
-    console.log(2);
     request(site).catch(console.error);
   });
 }
