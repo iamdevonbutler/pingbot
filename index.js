@@ -1,8 +1,8 @@
 const request = require('request-promise');
 
-const frequency = process.env.frequency || 60*60*5;
-const sites = process.env.sites ? process.env.sites.split(' ') : null;
-const pinbotDomain = process.env.pingbotDomain;
+const frequency = process.env.FREQUENCY || 60*60*5*1000;
+const sites = process.env.SITES ? process.env.SITES.split(' ') : null;
+const pinbotDomain = process.env.PINGBOT_DOMAIN;
 
 if (!pinbotDomain) {
   console.error(`Enviornment vairable "pinbotDomain" required`);
@@ -20,4 +20,5 @@ function ping() {
   });
 }
 
+ping();
 setInterval(ping, frequency);

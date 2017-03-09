@@ -6,6 +6,6 @@ Pingbot for heroku
 
 Create 3 environment variables:
 
-* frequency - how often to ping (in seconds)
-* sites - domains of sites to ping (separate domains w/ a space " ")
-* pinbotDomain - domain pinbot is hosted on
+* FREQUENCY - how often to ping (in seconds)
+* SITES - domains of sites to ping (separate domains w/ a space " ")
+* PINGBOT_DOMAIN - domain pinbot is hosted on

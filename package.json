@@ -1,5 +1,5 @@
 {
-  "name": "pingbot",
+  "name": "herokupingbot",
   "version": "0.1.0",
   "description": "Pingbot for heroku",
   "main": "index.js",
@@ -10,7 +10,7 @@
   "devDependencies": {},
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "FREQUENCY=10000 PINGBOT_DOMAIN=http://www.google.com SITES=http://www.google.com node index.js"
   },
   "engines": {
     "node": "6.x"
