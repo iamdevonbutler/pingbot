@@ -5,17 +5,19 @@ const sites = process.env.sites ? process.env.sites.split(' ') : null;
 const pinbotDomain = process.env.pingbotDomain;
 
 if (!pinbotDomain) {
-  throw `Enviornment vairable ${pinbotDomain} required`;
+  console.error(`Enviornment vairable "pinbotDomain" required`);
 }
 
 if (!sites) {
-  throw `Enviornment vairable ${sites} required`;
+  console.error(`Enviornment vairable "sites" required`);
 }
 
 function ping() {
-  request(pinbotDomain).catch(console.log);
+  console.log(111);
+  request(pinbotDomain).catch(console.error);
   sites.forEach(site => {
-    request(site).catch(console.log);
+    console.log(2);
+    request(site).catch(console.error);
   });
 }
 
